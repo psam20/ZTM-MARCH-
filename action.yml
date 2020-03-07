@@ -1,1 +1,12 @@
-
+name: 'ZTM-MARCH-HACKATHON'
+description: 'Get started '
+author: 'KISHAN'
+inputs: 
+  myInput:
+    description: 'Input to use'
+    default: 'world'
+runs:
+  using: 'node'
+  image: 'nodefile'
+  args:
+    - ${{ inputs.myInput }}
